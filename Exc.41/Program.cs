@@ -22,7 +22,7 @@ int M = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < MM; i++) 
                 
                                 {
-                // if (Console.ReadLine() == stop)  {
+                // if (Console.ReadLine() == stop)  {           // или же if (Console.ReadLine(),Equals(stop)) {
                 //     break;
                 //     }                  
                 // else {
