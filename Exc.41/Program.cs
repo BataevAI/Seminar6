@@ -2,43 +2,33 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 4
 
+Console.WriteLine("Введите числа, а мы посчитаем, сколько из них положительных");
+ 
+      
+        string stop = "stop";
+        int number;        
+        int count = 0;
+        String str = null;
 
-
-
-
-int count = 0;
-string stop = "stop";
-
-
-Console.WriteLine("Введите число M, обозначающее количество введенных числе, из которых будем искать положительные");
-
-int M = Convert.ToInt32(Console.ReadLine());
-
-
-
-        int MetodCount (int MM) {
-
-         
-            for (int i = 0; i < MM; i++) 
+                while (true)                
+           
+                    {
+                        
+                        str = Console.ReadLine();
+                        if (str == stop)
+                            {           
+                                break;
+                            }                  
+                            
                 
-                                {
-                // if (Console.ReadLine() == stop)  {           // или же if (Console.ReadLine(),Equals(stop)) {
-                //     break;
-                //     }                  
-                // else {
-                
-                int number = Convert.ToInt32(Console.ReadLine());
-                if (number > 0) count++;
+                            number = Convert.ToInt32(str);
+                            if (number > 0)  count++;
 
-                // }
-                                }
+                                 
+                    }
 
-        
-    return count;
-        }
-Console.WriteLine("ВВедите числа, а мы посчитаем, сколько из них положительных");
+    Console.WriteLine($"количество положительных чисел: {count}");
+  
 
-
-    int t = MetodCount(M);
-    Console.WriteLine($"положительных: {t} чисел");
+   
 
